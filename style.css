@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #8FCCFF;
+}
+
+nav, main, a, .tarjeta{
+    border-radius: 6px;
+}
+
+nav, .tarjeta{
+    padding: 5px;
+}
+
+nav, footer{
+    background-color: #f8e23c;
+    margin: 5px auto;
+    border: 3px solid #0a89f1;
+}
+
+nav{
+    width: 65dvw;
+    height: 7dvh;
+    ul{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        li{
+            font-size: 1.1rem;
+            margin-top: 5px;
+        }
+    }
+}
+
+a{
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+a:link, a:visited, a:active{
+    color: white;
+    background-color: #0a89f1;
+    border: 1px solid white;
+    padding: 2px;
+}
+
+main{
+    width: 60dvw;
+    background-color: white;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1{
+        text-shadow: 5px 5px 4px darkgray;
+    }
+}
+
+#contenedor{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.tarjeta{
+    color: white;
+    border: 1px solid black;
+    width: 13dvw;
+    height: 140px;
+    margin-bottom: 20px;
+    background: #FFFFFF;
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(219, 15, 56, 1) 100%);
+    transition: all 0.5s ease;
+}
+
+img{
+    float: right;
+    /* border: 1px solid black; */
+    transition: all 0.5s ease;
+}
+
+.tarjeta:hover, a:hover{
+    box-shadow: 5px 5px 10px 5px grey;
+}
+
+img:hover{
+    filter: drop-shadow(5px 5px 4px gold);
+}
+
+footer{
+    width: 65dvw;
+    height: 10dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    p, a{
+        text-align: center;
+    }
+
+    p{
+        width: 20dvw;
+    }
+}
+
+@media(max-width: 480px){
+    nav, main{
+        width: 90dvw;
+    }
+    #contenedor{
+        gap: 10px;
+    }
+    .tarjeta{
+        width: 40dvw;
+        height: 130px;
+    }
+
+    footer{
+        height: 10dvh;
+        p{
+            width: 50dvw;
+        }
+    }
+}

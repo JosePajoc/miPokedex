@@ -1,0 +1,26 @@
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    input{
+        height: 25px;
+        text-align: center;
+    }
+}
+
+button{
+    font-size: 1rem;
+    background-color: #0a89f1;
+    color: white;
+    border-radius: 3px;
+    width: 80px;
+    height: 30px;
+    margin-bottom: 10px;
+    transition: all 0.5s ease;
+}
+
+button:hover{
+    box-shadow: 5px 5px 10px 5px grey;
+}
