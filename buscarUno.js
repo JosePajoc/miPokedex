@@ -2,10 +2,9 @@ const contenedor = document.getElementById("contenedor");
 const numeroBuscar = document.getElementById("numeroBuscar");
 const btnBuscar = document.getElementById("btnBuscar");
 
-
 async function pokemon(){
     try{
-            numero = numeroBuscar.value;
+            let numero = numeroBuscar.value;
             if(numero !== ""){
                 numero = parseInt(numero);
                 if(numero>=1 && numero<=151){
