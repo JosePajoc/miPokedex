@@ -8,7 +8,7 @@ body{
     background-color: #8FCCFF;
 }
 
-nav, main, a, .tarjeta{
+nav, main, a, .tarjeta, footer{
     border-radius: 6px;
 }
 
@@ -24,7 +24,7 @@ nav, footer{
 
 nav{
     width: 65dvw;
-    height: 7dvh;
+    height: 8dvh;
     ul{
         list-style: none;
         display: flex;
@@ -49,7 +49,7 @@ a:link, a:visited, a:active{
 }
 
 main{
-    width: 60dvw;
+    width: 65dvw;
     background-color: white;
     margin: 10px auto;
     display: flex;
@@ -57,6 +57,7 @@ main{
     align-items: center;
     h1{
         text-shadow: 5px 5px 4px darkgray;
+        margin-bottom: 10px;
     }
 }
 
@@ -65,23 +66,97 @@ main{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 10px;
 }
 
 .tarjeta{
-    color: white;
     border: 1px solid black;
-    width: 13dvw;
-    height: 140px;
+    width: 12dvw;
+    height: 155px;
     margin-bottom: 20px;
-    background: #FFFFFF;
-    background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(219, 15, 56, 1) 100%);
+    h3{
+        font-size: 1.1rem;
+    }
+}
+
+.fire{
+    color: rgb(230, 230, 22);
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgb(194, 5, 43) 100%);
+    transition: all 0.5s ease;
+}
+.grass{
+    color: rgb(42, 107, 40);
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgb(3, 179, 11) 100%);
+    transition: all 0.5s ease;
+}
+.water{
+    color: rgb(5, 95, 110);
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgb(3, 85, 179) 100%);
+    transition: all 0.5s ease;
+}
+.bug{
+    color: rgb(253, 253, 251);
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgb(12, 53, 2) 100%);
+    transition: all 0.5s ease;
+}
+.normal{
+    color: rgb(94, 81, 48);
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgb(218, 150, 3) 100%);
+    transition: all 0.5s ease;
+}
+.poison{
+    color: white;
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgb(161, 3, 148) 100%);
+    transition: all 0.5s ease;
+}
+.electric{
+    color: rgb(65, 70, 1);
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgb(230, 247, 5) 100%);
+    transition: all 0.5s ease;
+}
+.ground{
+    color: rgb(65, 70, 1);
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgb(189, 174, 45) 100%);
+    transition: all 0.5s ease;
+}
+.fairy{
+    color: rgb(65, 70, 1);
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgb(241, 193, 223) 100%);
+    transition: all 0.5s ease;
+}
+.fighting{
+    color: rgb(65, 70, 1);
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgb(202, 201, 193) 100%);
+    transition: all 0.5s ease;
+}
+.psychic{
+    color: rgb(65, 70, 1);
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, #835280 100%);
+    transition: all 0.5s ease;
+}
+.rock{
+    color: rgb(65, 70, 1);
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, #66615c 100%);
+    transition: all 0.5s ease;
+}
+.ghost{
+    color: white;
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, #1d1c1b 100%);
+    transition: all 0.5s ease;
+}
+.ice{
+    color: white;
+    background: radial-gradient(circle, rgb(103, 186, 224) 0%, #2f03cc 100%);
+    transition: all 0.5s ease;
+}
+.dragon{
+    color: white;
+    background: radial-gradient(circle, rgb(241, 245, 223) 0%, goldenrod 100%);
     transition: all 0.5s ease;
 }
 
 img{
     float: right;
-    /* border: 1px solid black; */
     transition: all 0.5s ease;
 }
 
@@ -90,15 +165,15 @@ img{
 }
 
 img:hover{
-    filter: drop-shadow(5px 5px 4px gold);
+    filter: drop-shadow(5px 5px 4px white);
 }
 
 footer{
     width: 65dvw;
-    height: 10dvh;
+    height: 8dvh;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-evenly;
     align-items: center;
     gap: 5px;
     p, a{
@@ -108,6 +183,13 @@ footer{
     p{
         width: 20dvw;
     }
+}
+
+.escala{
+    transition: transform 0.5s ease;
+}
+.escala:hover{
+    transform: scale(1.2);
 }
 
 @media(max-width: 480px){

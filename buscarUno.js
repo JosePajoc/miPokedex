@@ -11,6 +11,8 @@ async function pokemon(){
                     contenedor.innerHTML = "";
                     const pokemon = await fetch(`https://pokeapi.co/api/v2/pokemon/${numero}`);
                     const pokeJson = await pokemon.json();
+
+                    const tipo = pokeJson.types[0].type.name;
                     
                     const div = document.createElement("div");
                     div.classList.add("tarjeta");
@@ -21,6 +23,8 @@ async function pokemon(){
                     const img = document.createElement("img");
                     img.setAttribute("src", pokeJson.sprites.front_default);
                     
+                     div.classList.add(tipo);
+
                     div.append(h3);
                     div.append(p);
                     div.append(img);
